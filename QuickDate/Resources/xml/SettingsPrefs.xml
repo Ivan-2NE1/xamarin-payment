@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory android:layout="@xml/divider"></PreferenceCategory>
+  <!--PROFILE SECTION -->
+  <PreferenceCategory android:title="@string/Lbl_General"  >
+    
+    <Preference
+      android:key="myAccount_key"
+      android:title="@string/Lbl_MyAccount" />
+    
+    <Preference
+      android:key="editPassword_key"
+      android:title="@string/Lbl_Password"
+      android:summary="@string/Lbl_Change_your_password" />
+
+    <Preference
+      android:key="socialLinks_key"
+      android:title="@string/Lbl_SocialLinks" />
+ 
+    <Preference
+      android:key="blocked_key"
+      android:title="@string/Lbl_BlockedUsers" />
+    
+  </PreferenceCategory>
+  
+  <!--Messages SECTION-->
+  <PreferenceCategory android:layout="@xml/divider"></PreferenceCategory>
+  <PreferenceCategory android:title="@string/Lbl_Messenger" >
+
+    <!-- Online -->
+    <SwitchPreference
+      android:title="@string/Lbl_OnlineChat"
+      android:key="chatOnline_key"
+      android:defaultValue="true" />
+ 
+  </PreferenceCategory>
+
+  <!--Privacy SECTION-->
+  <PreferenceCategory android:layout="@xml/divider"></PreferenceCategory>
+  <PreferenceCategory android:title="@string/Lbl_Privacy" >
+
+    <!--Show my profile on search engines?-->
+    <SwitchPreference
+      android:title="@string/Lbl_PSearchEngines"
+      android:key="searchEngines_key"
+      android:defaultValue="true" />
+
+    <!--Show my profile in random users-->
+    <SwitchPreference
+      android:title="@string/Lbl_PRandomUsers"
+      android:key="randomUsers_key"
+      android:defaultValue="true" />
+
+    <!--Show my profile in find match page-->
+    <SwitchPreference
+      android:title="@string/Lbl_PFindMatchPage"
+      android:key="findMatchPage_key"
+      android:defaultValue="true" />
+      
+  </PreferenceCategory>
+
+  <!--Storage SECTION-->
+  <PreferenceCategory android:layout="@xml/divider"></PreferenceCategory>
+  <PreferenceCategory android:title="@string/Lbl_Storage" >
+
+    <Preference
+      android:key="Storage_key"
+      android:title="@string/Lbl_ClearCache" />
+
+  </PreferenceCategory>
+ 
+  <!--Support SECTION-->
+  <PreferenceCategory android:layout="@xml/divider"></PreferenceCategory>
+  <PreferenceCategory android:title="@string/Lbl_Support">
+   
+    <Preference
+        android:key="help_key"
+        android:title="@string/Lbl_Help" />
+  
+    <Preference
+      android:key="about_key"
+      android:title="@string/Lbl_About" />
+
+    <Preference
+      android:key="deleteAccount_key"
+      android:title="@string/Lbl_DeleteAccount" />
+    
+    <Preference 
+      android:key="logout_key"
+      android:title="@string/Lbl_Logout" />
+  
+  </PreferenceCategory>
+  
+</PreferenceScreen>
